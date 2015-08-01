@@ -52,7 +52,7 @@ public class SocialSecurityNumber {
   private static final Integer SSN_DATE_LENGTH = 6;
   private static final Integer DIVIDER = 31;
 
-  public static Boolean validate(String socialSecurityNumber) {
+  public static boolean validate(String socialSecurityNumber) {
     return validatePattern(socialSecurityNumber) && validateDate(socialSecurityNumber) && validateCheckCharacter(socialSecurityNumber);
   }
 
