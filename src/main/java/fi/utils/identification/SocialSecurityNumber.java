@@ -81,7 +81,7 @@ public class SocialSecurityNumber {
   }
 
   private static boolean validatePattern(String socialSecurityNumber) {
-    String SSNpattern = "^[\\d]{6}[-|A|+][\\d]{3}[\\w|\\d]{1}";
+    String SSNpattern = "^[\\d]{6}[-|A|+][\\d]{3}[\\w|\\d]";
     return Pattern.matches(SSNpattern, socialSecurityNumber);
   }
 }
