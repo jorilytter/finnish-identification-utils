@@ -1,4 +1,4 @@
-https://travis-ci.org/jorilytter/finnish-identification-utils.svg
+[![Build Status](https://travis-ci.org/jorilytter/finnish-identification-utils.svg)
 
 Finnish identification validation utils.
 
