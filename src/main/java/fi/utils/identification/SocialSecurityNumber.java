@@ -50,10 +50,11 @@ public class SocialSecurityNumber {
 
   private static final Integer SSN_LENGTH = 10;
   private static final Integer SSN_DATE_LENGTH = 6;
+  private static final Integer SSN_SUFFIX_START_POSITION = 7;
   private static final Integer DIVIDER = 31;
 
   public static boolean validate(String socialSecurityNumber) {
-    return validatePattern(socialSecurityNumber) && validateDate(socialSecurityNumber) && validateCheckCharacter(socialSecurityNumber);
+    return validatePattern(socialSecurityNumber) && validateDate(socialSecurityNumber) && validateSuffix(socialSecurityNumber) && validateCheckCharacter(socialSecurityNumber);
   }
 
   private static boolean validateCheckCharacter(String socialSecurityNumber) {
@@ -63,6 +64,12 @@ public class SocialSecurityNumber {
     Integer checkCharKey = Integer.parseInt(digits) % DIVIDER;
 
     return checkCharacter.get(checkCharKey).equals(lastCharOfSSN.charAt(0));
+  }
+
+  private static boolean validateSuffix(String socialSecurityNumber) {
+    String suffix = socialSecurityNumber.substring(SSN_SUFFIX_START_POSITION, SSN_LENGTH);
+    Integer suffixNumber = Integer.parseInt(suffix);
+    return suffixNumber >= 2 && suffixNumber <= 899;
   }
 
   private static boolean validateDate(String socialSecurityNumber) {
