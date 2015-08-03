@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.regex.Pattern;
 
-/*
- * Logic explained: https://www.google.fi/url?sa=t&rct=j&q=&esrc=s&source=web&cd=6&ved=0CE0QFjAFahUKEwjo0MuzsYjHAhVFjiwKHdUrAGo&url=http%3A%2F%2Fwww.vero.fi%2Fdownload%2FTarkistusmerkin_laskenta%2F%257BD5780347-547E-4C44-90C1-25F8AD9DA7F8%257D%2F6508&ei=xP68VejeIsWcsgHV14DQBg&usg=AFQjCNGmv8CxhSp8UTNp-Dc6LyvdMGOccQ&sig2=7kk9HbaeDgxjY9MNXT6dOA
+/**
+ * Logic explained: http://www.vero.fi/download/Tarkistusmerkin_laskenta/%7BD5780347-547E-4C44-90C1-25F8AD9DA7F8%7D/6508
  */
 public class BusinessIdentification {
 
