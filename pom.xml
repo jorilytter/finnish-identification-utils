@@ -4,7 +4,7 @@
 
   <groupId>com.github.jorilytter.utils</groupId>
   <artifactId>identification</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>finnish-identification-utils</name>
